@@ -1,0 +1,219 @@
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+<link  rel="icon" type="logo/icon" href="images/logo.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="styles/styles/css/style.css">
+
+<script src="styles/styles/js/jquery.min.js"></script>
+<script src="styles/styles/js/bootstrap.min.js"></script>
+</head>
+<style>
+*{
+	padding:0;
+	margin:0;
+	}
+	img{
+	border-radius:50%;
+	margin-left:40px;
+	margin-top:10px;
+	}
+	.header{
+	height:100px;
+	width:500%;
+	position:fixed;
+	background-color:mediumseagreen;
+	}
+	.google{
+	color:white;
+	position:absolute;
+	top:20%;
+	left:50px;
+	}
+body {
+  font-family: "Lato",cursive;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 18px;}
+}
+body
+{
+background-image:url('mobile8.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+}
+.container{
+margin-left:170px;
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="full">
+<div class="container-fluid" class="jumbotron text-center">
+<div class="row" style="background-color:dodgerblue;">
+<div class="col-sm-4"><img class="img-circle" height="80px" width="80px"
+ src="logo.jpg" alt="logo"></div>
+<div class="col-sm-12">
+ <h1 style="margin-left:120px; margin-top:-40px; font-family:times new roman;font-size:35;">SARA MOBILES</h1></div>
+
+</div>
+</div>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="stock.html">STOCK</a><br>
+  <a href="sold.html">MOBILE SOLD</a><br>
+  <a href="customer.html">CUSTOMER</a><br>
+  <a href="details.html">MOBILE DETAILS</a><br>
+  <p class="an"> <a href="index.html" class="navbar-brand">logout
+	</a></p>
+</div>
+<div id="main">
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="container">
+  
+             
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        
+        <th>S.NO</th>
+        <th>NAME</th>
+        <th>MOBILENAME</th>
+		<th>ITEM PURCHASED</th>
+        <th>MOBILENUMBER</th>
+        <th>ADDRESS</th>
+		<th>EMAIL</th>
+        <th>DATEOFPURCHASE</th>
+        <th>PRICE</th>
+      </tr>
+    </thead>
+    <tbody class="table-active">
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>oppo</td>
+		<td>oppo A53</td>
+        <td>6547890238</td>
+        <td>34,AnnaNagar,4th street,salem.</td>
+		<td>anna@gmail.com</td>
+        <td>20 Jan 2021</td>
+        <td>30000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Priya</td>
+        <td>Redmi</td>
+		<td>Redmi Note9</td>
+        <td>7654892342</td>
+        <td>56,PeriyarNagar,5th street,Madurai.</td>
+		<td>priya@gmail.com</td>
+        <td>14 Feb 2021</td>
+        <td>17000</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Shreya</td>
+        <td>Oneplus</td>
+		<td>Oneplus 8T</td>
+        <td>6545738399</td>
+        <td>23,Crosscutroad,6th street,Coimbatore.</td>
+		<td>shreya@gmail.com</td>
+        <td>25 June 2021</td>
+        <td>45000</td>
+      </tr>
+	  <tr>
+        <td>4</td>
+        <td>Ravi</td>
+        <td>vivo</td>
+		<td>Vivo v21</td>
+        <td>7893452611</td>
+        <td>87,vinayaga Nagar,4th street,Coimbatore.</td>
+		<td>ravi@gmail.com</td>
+        <td>29 June 2021</td>
+        <td>29,950</td>
+      </tr>
+	  <tr>
+        <td>5</td>
+        <td>Riya</td>
+        <td>Iphone</td>
+		<td>Iphone 13 pro</td>
+		<td>7654329871</td>
+        <td>25,Anna salai,3rd street,chennai.</td>
+        <td>riya@gmail.com</td>
+        <td>8 August 2021</td>
+        <td>57000</td>
+      </tr>
+	  
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
